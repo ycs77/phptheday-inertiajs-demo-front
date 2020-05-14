@@ -1,6 +1,5 @@
 import { InertiaApp } from '@inertiajs/inertia-vue'
 import Vue from 'vue'
-import 'nprogress/nprogress.css'
 
 Vue.use(InertiaApp)
 
