@@ -16,7 +16,7 @@
       <div v-for="todo in todos" :key="todo.id" class="flex select-none">
         <label class="flex flex-1 px-6 py-4 cursor-pointer">
           <div class="mr-4">
-            <input type="checkbox" class="form-checkbox" v-model="todo.checked" @change="onCheckTodo(todo.id, todo.checked)">
+            <input type="checkbox" class="form-checkbox cursor-pointer" v-model="todo.checked" @change="onCheckTodo(todo.id, todo.checked)">
           </div>
           <div class="flex-1" :class="todo.checked ? 'text-gray-500 line-through' : ''">{{ todo.content }}</div>
         </label>
