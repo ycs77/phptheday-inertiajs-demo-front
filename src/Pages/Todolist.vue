@@ -5,9 +5,9 @@
       <form class="flex px-6 py-4" @submit.prevent="createTodo">
         <div class="flex-1 mr-4">
           <input type="text" class="form-input w-full" placeholder="請輸入待辦事項..." v-model="form.content">
-          <div v-if="$page.errors.content" class="mt-2 text-red-600 text-sm">
-            {{ $page.errors.content[0] }}
-          </div>
+          <!-- <div class="mt-1 text-red-600 text-sm">
+            Error message.
+          </div> -->
         </div>
         <div>
           <button class="px-4 py-2 text-white bg-purple-500 rounded hover:bg-purple-400 focus:outline-none">新增</button>
