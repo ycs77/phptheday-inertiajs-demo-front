@@ -1,5 +1,5 @@
 <template>
-  <h1>Hello Inertia!</h1>
+  <h1 class="text-purple-700 text-3xl text-center">Hello inertia!</h1>
 </template>
 
 <script>

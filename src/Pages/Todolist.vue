@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-md pt-6 mx-auto">
+  <div class="max-w-md mx-auto">
     <h1 class="text-purple-700 text-3xl text-center">待辦事項</h1>
     <div class="bg-white mt-4 border border-purple-200 divide-y divide-purple-200 rounded-md shadow-md">
       <form class="flex px-6 py-4" @submit.prevent="createTodo">

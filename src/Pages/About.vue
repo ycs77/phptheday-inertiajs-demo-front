@@ -1,5 +1,5 @@
 <template>
-  <h1>About</h1>
+  <h1 class="text-purple-700 text-3xl text-center">關於</h1>
 </template>
 
 <script>
