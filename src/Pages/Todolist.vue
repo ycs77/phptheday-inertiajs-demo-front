@@ -16,7 +16,7 @@
       <div v-for="todo in todos" :key="todo.id" class="flex select-none">
         <label class="flex flex-1 px-6 py-4 cursor-pointer">
           <div class="mr-4">
-            <input type="checkbox" class="form-checkbox cursor-pointer" v-model="todo.checked" @change="onCheckTodo(todo.id, todo.checked)">
+            <input type="checkbox" class="form-checkbox cursor-pointer" v-model="todo.checked" @change="checkTodo(todo.id, todo.checked)">
           </div>
           <div class="flex-1" :class="todo.checked ? 'text-gray-500 line-through' : ''">{{ todo.content }}</div>
         </label>
@@ -53,7 +53,7 @@ export default {
     createTodo() {
       console.log(`新增 ${this.form.content} 待辦事項...`)
     },
-    onCheckTodo(id, checked) {
+    checkTodo(id, checked) {
       console.log(`核選 ${id} 號待辦事項...`, checked)
     },
     removeTodo(id) {
