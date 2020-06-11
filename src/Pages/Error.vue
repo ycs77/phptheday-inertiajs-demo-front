@@ -12,6 +12,11 @@
 
 <script>
 export default {
+  metaInfo() {
+    return {
+      title: this.message
+    }
+  },
   props: {
     code: Number,
     message: String

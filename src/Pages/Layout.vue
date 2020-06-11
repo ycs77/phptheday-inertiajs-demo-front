@@ -16,3 +16,13 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  metaInfo() {
+    return {
+      titleTemplate: `%s - ${this.$page.app.name}`
+    }
+  }
+}
+</script>

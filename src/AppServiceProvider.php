@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\ServiceProvider;
 use Inertia\Inertia;
@@ -26,6 +27,11 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Inertia::share([
+            'app' => function () {
+                return [
+                    'name' => 'Inertia 範例', // Config::get('app.name')
+                ];
+            },
             'errors' => function () {
                 return Session::get('errors')
                     ? Session::get('errors')->getBag('default')->getMessages()

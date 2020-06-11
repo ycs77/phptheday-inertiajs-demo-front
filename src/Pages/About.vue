@@ -4,6 +4,8 @@
 
 <script>
 export default {
-  //
+  metaInfo: {
+    title: '關於'
+  }
 }
 </script>

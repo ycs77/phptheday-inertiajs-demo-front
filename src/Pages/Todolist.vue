@@ -32,6 +32,9 @@
 
 <script>
 export default {
+  metaInfo: {
+    title: '待辦事項'
+  },
   data: () => ({
     todos: [
       {
