@@ -32,5 +32,9 @@ class AppServiceProvider extends ServiceProvider
                     : (object) [];
             },
         ]);
+
+        Inertia::version(function () {
+            return md5_file(public_path('mix-manifest.json'));
+        });
     }
 }
