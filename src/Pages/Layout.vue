@@ -19,10 +19,10 @@
 
 <script>
 export default {
-  metaInfo() {
-    return {
-      titleTemplate: `%s - ${this.$page.app.name}`
-    }
-  }
+  // metaInfo() {
+  //   return {
+  //     titleTemplate: `%s - ${this.$page.app.name}`
+  //   }
+  // }
 }
 </script>
