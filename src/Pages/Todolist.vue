@@ -5,8 +5,8 @@
       <form class="flex px-6 py-4" @submit.prevent="createTodo">
         <div class="flex-1 mr-4">
           <input type="text" class="form-input w-full" placeholder="請輸入待辦事項..." v-model="form.content">
-          <!-- <div class="mt-1 text-red-600 text-sm">
-            Error message.
+          <!-- <div class="mt-2 text-red-600 text-sm">
+            錯誤訊息...
           </div> -->
         </div>
         <div>
