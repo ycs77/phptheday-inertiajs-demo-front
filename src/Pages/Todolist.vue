@@ -35,23 +35,25 @@ export default {
   metaInfo: {
     title: '待辦事項'
   },
-  data: () => ({
-    todos: [
-      {
-        id: 1,
-        content: '修復 A bug',
-        checked: false
-      },
-      {
-        id: 2,
-        content: '開發 B 功能',
-        checked: true
+  data() {
+    return {
+      todos: [
+        {
+          id: 1,
+          content: '修復 A bug',
+          checked: false
+        },
+        {
+          id: 2,
+          content: '開發 B 功能',
+          checked: true
+        }
+      ],
+      form: {
+        content: ''
       }
-    ],
-    form: {
-      content: ''
     }
-  }),
+  },
   methods: {
     createTodo() {
       console.log(`新增 ${this.form.content} 待辦事項...`)

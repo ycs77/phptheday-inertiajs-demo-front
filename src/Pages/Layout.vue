@@ -10,10 +10,9 @@
         </div>
 
         <div class="md:flex md:justify-between md:items-center md:flex-1" :class="{ 'hidden': !showMenu }">
-          <ul class="p-2 pt-0 space-y-1 tracking-wider md:flex md:space-y-0 md:pb-0 md:ml-2 md:space-x-2">
-            <li><a class="block px-2 py-1 text-purple-500 rounded select-none hover:bg-purple-100" href="/about">關於</a></li>
+          <ul class="p-2 pt-0 space-y-1 tracking-wider md:flex md:space-y-0 md:pb-0 md:space-x-2">
             <li><a class="block px-2 py-1 text-purple-500 rounded select-none hover:bg-purple-100" href="/posts">文章</a></li>
-            <li><a class="block px-2 py-1 text-purple-500 rounded select-none hover:bg-purple-100" href="/todos">待辦事項</a></li>
+            <li><a class="block px-2 py-1 text-purple-500 rounded select-none hover:bg-purple-100" href="/about">關於</a></li>
           </ul>
 
           <ul class="p-2 border-t border-gray-300 space-y-1 tracking-wider md:flex md:py-0 md:border-t-0 md:space-y-0 md:space-x-2">
@@ -22,6 +21,7 @@
             </template>
             <!-- <template>
               <li><div class="block px-2 py-1 text-gray-700">User</div></li>
+              <li><a class="block px-2 py-1 text-purple-500 rounded select-none hover:bg-purple-100" href="/todos">待辦事項</a></li>
               <li><a class="block px-2 py-1 text-purple-500 rounded select-none hover:bg-purple-100" href="/logout">登出</a></li>
             </template> -->
           </ul>
@@ -39,7 +39,7 @@
 export default {
   // metaInfo() {
   //   return {
-  //     titleTemplate: `%s - ${this.$page.app.name}`
+  //     titleTemplate: `%s - Title`
   //   }
   // },
   data() {
