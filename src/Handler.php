@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Support\Facades\App;
 use Inertia\Inertia;
 use Throwable;
 
@@ -64,7 +65,6 @@ class Handler extends ExceptionHandler
         ];
 
         if (App::environment('production')
-            && $request->header('X-Inertia')
             && in_array($response->status(), array_keys($errorCodes))) {
             return Inertia::render('Error', [
                 'code' => $response->status(),

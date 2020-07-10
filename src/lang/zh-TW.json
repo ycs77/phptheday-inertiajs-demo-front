@@ -1,0 +1,11 @@
+{
+  "Forbidden": "無法瀏覽",
+  "Not Found": "頁面不存在",
+  "Page Expired": "頁面逾時",
+  "Server Error": "伺服器錯誤",
+  "Service Unavailable": "暫時不提供服務",
+  "This action is unauthorized.": "權限不足",
+  "Too Many Attempts.": "嘗試次數過多",
+  "Too Many Requests": "請求次數過多",
+  "Unauthorized": "權限不足"
+}
