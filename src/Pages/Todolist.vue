@@ -21,8 +21,8 @@
           <div class="flex-1" :class="todo.checked ? 'text-gray-500 line-through' : ''">{{ todo.content }}</div>
         </label>
         <button class="px-6 text-red-600 hover:text-red-400 focus:outline-none" @click="removeTodo(todo.id)">
-          <svg class="fill-current h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M8 6V4c0-1.1.9-2 2-2h4a2 2 0 0 1 2 2v2h5a1 1 0 0 1 0 2h-1v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8H3a1 1 0 1 1 0-2h5zM6 8v12h12V8H6zm8-2V4h-4v2h4zm-4 4a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0v-6a1 1 0 0 1 1-1zm4 0a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0v-6a1 1 0 0 1 1-1z"/>
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
         </button>
       </div>
