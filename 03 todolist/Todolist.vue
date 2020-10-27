@@ -41,12 +41,12 @@ export default {
         {
           id: 1,
           content: '修復 A bug',
-          checked: false
+          checked: true
         },
         {
           id: 2,
           content: '開發 B 功能',
-          checked: true
+          checked: false
         }
       ],
       form: {

@@ -5,7 +5,7 @@ const rgba = (value, alpha) => tinycolor(value).setAlpha(alpha).toRgbString()
 module.exports = {
   purge: [
     './src/**/*.blade.php',
-    './src/**/*.vue'
+    './src/**/*.vue',
   ],
   theme: {
     extend: {
@@ -19,17 +19,17 @@ module.exports = {
           borderColor: theme('colors.purple.300'),
           '&:focus': {
             boxShadow: `0 0 0 3px ${rgba(theme('colors.purple.500'), 0.5)}`,
-            borderColor: theme('colors.purple.400')
-          }
+            borderColor: theme('colors.purple.400'),
+          },
         },
         checkbox: {
-          color: theme('colors.purple.500')
-        }
-      }
-    })
+          color: theme('colors.purple.500'),
+        },
+      },
+    }),
   },
   variants: {},
   plugins: [
-    require('@tailwindcss/custom-forms')
-  ]
+    require('@tailwindcss/custom-forms'),
+  ],
 }

@@ -1,7 +1,6 @@
 const mix = require('laravel-mix')
 
-mix.postCss('src/app.css', 'src/tailwindcss.css', [
-  require('postcss-import'),
+mix.postCss('01 hello world/app.css', '01 hello world/tailwindcss.css', [
   require('tailwindcss'),
   require('autoprefixer')
 ])

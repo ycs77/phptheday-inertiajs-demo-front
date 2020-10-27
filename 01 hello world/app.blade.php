@@ -14,7 +14,7 @@
     <link href="/css/tailwindcss.css" rel="stylesheet">
 
     <!-- Scripts -->
-    <script src="/js/app.js" defer></script>
+    <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
 
 <body class="bg-purple-100">

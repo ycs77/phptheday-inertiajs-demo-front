@@ -16,14 +16,14 @@
           </ul>
 
           <ul class="p-2 border-t border-gray-300 space-y-1 tracking-wider md:flex md:py-0 md:border-t-0 md:space-y-0 md:space-x-2">
-            <template>
+            <template v-if="true">
               <li><a class="block px-2 py-1 text-purple-500 rounded select-none hover:bg-purple-100" href="/login">登入</a></li>
             </template>
-            <!-- <template>
+            <template v-else>
               <li><div class="block px-2 py-1 text-gray-700">User</div></li>
               <li><a class="block px-2 py-1 text-purple-500 rounded select-none hover:bg-purple-100" href="/todos">待辦事項</a></li>
-              <li><a class="block px-2 py-1 text-purple-500 rounded select-none hover:bg-purple-100" href="/logout">登出</a></li>
-            </template> -->
+              <li><a class="block px-2 py-1 text-purple-500 rounded select-none hover:bg-purple-100 focus:outline-none" href="/logout">登出</a></li>
+            </template>
           </ul>
         </div>
       </div>
