@@ -4,8 +4,10 @@ const rgba = (value, alpha) => tinycolor(value).setAlpha(alpha).toRgbString()
 
 module.exports = {
   purge: [
-    './src/**/*.blade.php',
-    './src/**/*.vue',
+    './01 hello world/**/*.blade.php',
+    './01 hello world/**/*.vue',
+    './02 login/**/*.vue',
+    './03 todolist/**/*.vue',
   ],
   theme: {
     extend: {
